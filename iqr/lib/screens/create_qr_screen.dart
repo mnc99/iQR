@@ -17,6 +17,27 @@ class CreateQRScreen extends StatefulWidget {
   State<CreateQRScreen> createState() => _CreateQRScreenState();
 }
 
+// Types of QR Codes formats
+enum QRType { text, url, email, phone, sms, wifi, location, contact }
+
+// WIFI QR Code
+// WIFI:S:<SSID>;T:<WPA|WEP|>;P:<password>;;
+
+// Geo Location QR Code
+// GEO:<latitude>,<longitude>
+
+// Contact QR Code
+// BEGIN:VCARD
+// VERSION:3.0
+// N:<Last Name>;<First Name>;;;
+// FN:<First Name> <Last Name>
+// TEL;TYPE=CELL:<Phone Number>
+// EMAIL:<Email Address>
+// END:VCARD
+
+// URL QR Code
+// https://www.google.com
+
 class _CreateQRScreenState extends State<CreateQRScreen> {
 
   // Controller for the textfield
