@@ -33,6 +33,19 @@ class AppThemes {
         ),
         borderRadius: BorderRadius.circular(30.0)
       ),
+    ),
+
+    // Elevated Buttons theme
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all<Color>(accentColor),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30.0),
+          ),
+        ),
+
+      )
     )
     
   );
